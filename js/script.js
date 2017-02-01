@@ -1,17 +1,16 @@
-function drawChristmasTree(n) {
-    for (var k = 0; k < n; k++) {
+function drawChristmasTree(heightTree) {
+    for (var i = 0; i < heightTree; i++) {
         var star = '';
 
-        for (var l = 0; l < n - k; l++) {
+        for (var j = 0; j < heightTree - i; j++) {
             star += ' ';
         }
-        for (var l = 0; l <= k * 2; l++) {
+        for (var j = 0; j <= i * 2; j++) {
             star += '*';
         }
 
         console.log(star);
     }
-
 }
 
 var drawChristmasTree5 = drawChristmasTree(50);
