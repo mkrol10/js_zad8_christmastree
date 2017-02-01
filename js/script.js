@@ -5,7 +5,7 @@ function drawChristmasTree(heightTree) {
         for (var j = 0; j < heightTree - i; j++) {
             star += ' ';
         }
-        for (var j = 0; j <= i * 2; j++) {
+        for (j = 0; j <= i * 2; j++) {
             star += '*';
         }
 
